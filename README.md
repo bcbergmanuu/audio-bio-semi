@@ -1,5 +1,5 @@
 # audio-bio-semi
-Resettable audio trigger for use with biosemi
+Resettable audio trigger for use with biosemi. This device is used to synchronise audio events to trigger actions.
 
 The trigger has two indicator LED's, a red and a green, either one is lid. 
 
@@ -7,4 +7,9 @@ The trigger has two indicator LED's, a red and a green, either one is lid.
 - When no audio is received and a trigger of bit 7 (bit 128) is given, the green LED is turned on and the BioSemi will detect bit 128 set to 0.
 
 In case both a parallel trigger and a audio pulse are received simultaniously by the device the output is undetermined.
+
+# hardware
+No software is used, the hardware 
+![alt text](https://github.com/bcbergmanuu/audio-bio-semi/blob/main/Schematic_audio-biosemi_2021-09-14.svg?raw=true)
+[a link](https://www.ti.com/lit/ds/symlink/cd4027b-mil.pdf)
 
