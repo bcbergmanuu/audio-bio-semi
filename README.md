@@ -14,3 +14,4 @@ In case both a parallel trigger and a audio pulse are received simultaniously by
 
 No software is used to prevent any delay. The device utilizes a [cd4027](https://www.ti.com/lit/ds/symlink/cd4027b-mil.pdf) for switching between states. 
 
+![schematic](https://github.com/bcbergmanuu/audio-bio-semi/blob/main/Biosemi-audio.svg?raw=true)
