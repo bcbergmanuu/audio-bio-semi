@@ -1,10 +1,10 @@
 # bio semi triggerbox
-Resettable audio trigger for use with biosemi. This device is used to synchronise audio events to trigger actions.
+Resettable audio trigger for use with biosemi. This device is used to synchronise audio or screen changes to external input for Biosemi.
 
 The trigger has three indicator LED's.
   - Red: When audio is received and all inputs of the paralel port (bits 0-7/pins 1-8) ar set 0, the red LED will turn on, and the BioSemi will detect bit 128 set to 1.
   - Green: When no audio is received and a trigger of bit 7 (bit 128) is given, the green LED is turned on and the BioSemi will detect bit 128 set to 0.
-In case both a parallel trigger and a audio pulse are received simultaniously by the device the output is undetermined.
+In case both a parallel trigger and an audio/visual detection are received simultaniously by the device the output is undetermined.
   - Yellow: When the sensor detects a signal, either audio or light.
 
 # hardware
