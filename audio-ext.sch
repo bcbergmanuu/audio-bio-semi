@@ -8731,6 +8731,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
 <part name="AUDIO-IN" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="1,6/0,8" package3d_urn="urn:adsk.eagle:package:30830/1" value=""/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -8798,6 +8799,10 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="NAME" x="72.263" y="41.3258" size="1.778" layer="95"/>
 <attribute name="VALUE" x="72.263" y="46.482" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="C2" gate="G$1" x="25.4" y="58.42" smashed="yes">
+<attribute name="NAME" x="26.924" y="58.801" size="1.778" layer="95"/>
+<attribute name="VALUE" x="26.924" y="53.721" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8822,7 +8827,12 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
-<wire x1="35.56" y1="78.74" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="78.74" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="71.12" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="60.96" x2="25.4" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="71.12" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
+<junction x="35.56" y="71.12"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8830,6 +8840,10 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="35.56" y1="40.64" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="53.34" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="40.64" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
+<junction x="35.56" y="40.64"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
